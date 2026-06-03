@@ -23,9 +23,22 @@ To write a Python program that demonstrates **operator overloading** by overload
    - Use `print(ob1 < ob2)` to trigger the overloaded behavior.
 
 ---
-
 ## 💻 Program
-
+~~~
+class A:
+    def __init__(self, a):
+        self.a = a
+    def __lt__(self, other):
+        if(self.a<other.a):
+            return "ob1 is less than ob2"
+        else:
+            return "ob2 is less than ob1"
+ob1 = A(20)
+ob2 = A(3)
+print(ob1 < ob2)
+~~~
 ## Output
+<img width="944" height="170" alt="Screenshot 2025-10-20 192450" src="https://github.com/user-attachments/assets/123a2721-13f7-49ee-8962-20fbd8fa3d8a" />
 
 ## Result
+Thus , the program has been executed succesfully.
